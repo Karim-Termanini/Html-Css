@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+.bg-image {
+  padding: 300px;
+  background-image: url(background-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 0px 15px 0px;
+  display: block;
+}
+.header {
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  color: bisque;
+  position: relative;
+  display: block;
+}
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 0;
+  z-index: 1;
+}
+nav img {
+  display: inline-block;
+  position: fixed;
+  border-radius: 30px;
+  margin-left: 10px;
+  bottom: 5%;
+  animation: logo 1s cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal forwards;
+}
+@keyframes logo {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 0% 0%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}
+.nav-links {
+  background: #131418;
+  padding: 10px 30px;
+  border-bottom-left-radius: 12px;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 30px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.nav-links a {
+  text-decoration: none;
+  color: rgb(216, 195, 169);
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-links a:hover {
+  text-decoration-line: underline;
+  color: rgb(219, 0, 0);
+}
+.text {
+  right: -5%;
+  top: 5%;
+  position: relative;
+  color: rgb(59, 8, 8);
+  display: block;
+}
+.text:hover {
+  text-decoration-line: underline;
+  color: #131418;
+}
+
+.text2 h2 {
+  width: 200px;
+  position: relative;
+  left: 25%;
+  color: rgb(88, 126, 13);
+  z-index: 1;
+  font-weight: bold;
+  float: left;
+  margin-top: 30px;
+}
+.text2 p {
+  width: 200px;
+  display: block;
+  position: relative;
+  right: 25%;
+  color: rgb(88, 126, 13);
+  z-index: 1;
+  font-weight: bold;
+  float: right;
+  margin-top: 30px;
+}
+.hero {
+  width: 100%;
+  height: 28vh;
+  background: #f1f9ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 25px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  color: rgb(77, 10, 10);
+}
+.hero-links {
+  display: flex;
+}
+.hero-links a {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transform: transforme 0.5s;
+}
+.hero-links a .fab {
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
+}
+.hero-links a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+}
+.hero-links a:hover::after {
+  top: 0;
+}
+.hero-links a:hover .feb {
+  color: red;
+}
+.hero-links a:hover {
+  transform: translateY(-10px);
+}
