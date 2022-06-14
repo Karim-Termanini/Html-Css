@@ -2,8 +2,6 @@
  Projecte,Chalenges,Ressources
  
 ## **[Projecte](https://github.com/Karim-Termanini/Html-Css/tree/main/Html%26Css-ProjecteUndChalenges/Project)**
-[Projecte](https://github.com/Karim-Termanini/Html-Css/tree/main/Html%26Css-ProjecteUndChalenges/Project)
-
 
 >>**1-**[Elzero Services](https://elszero-services.netlify.app/)
 
