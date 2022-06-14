@@ -1,119 +1,130 @@
-img {
-    width: 70px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    text-align: center;
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-rows: 1fr auto;
+  text-align: center;
+  gap: 10px 10px;
 }
 
-.container {
-    border: 1px solid red;
-    margin: auto;
-    width: 700px;
-    padding: 20px 10px 10px;
+.grid div {
+  background-color: #403f3f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-table {
-    width: 700px;
-    margin: auto;
-    text-align: center;
-    border-bottom: 1px solid green;
-    padding: 10px 0 0px;
-    position: relative;
+.grid1 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  gap: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-tbody tr {
-    counter-increment: members-counter;
-    position: relative;
+.grid1 div {
+  background-color: #2196f3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.title::after {
-    content: counter(members-counter);
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(129, 129, 252);
-    color: white;
-    align-items: center;
-    top: 20;
-    left: 390px;
-    border-radius: 5px;
-    display: none;
+.one, .eight {
+  grid-column: span 3;
 }
 
-.title:hover::after {
-    display: inline-block;
+.one {
+  order: 8;
 }
 
-table td {
-    background-color: #EEE;
-    padding: 10px 15px;
+.eight {
+  order: -1;
 }
 
-.th {
-    background-color: #404040;
-    color: white;
+.two {
+  grid-column: span 2;
 }
 
-.btn-1, .btn-2 {
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
+.five {
+  grid-column: span 2;
+  grid-row: span 3;
 }
 
-.btn-1 {
-    background: #03a9f4;
+.grid3 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  gap: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: space-between;
 }
 
-.btn-2 {
-    background: #e91e63;
+.grid3 div {
+  background-color: #e91e63;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-span {
-    font-size: 20px;
-    font-weight: bold;
+.grid4 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  gap: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.btn-f-b {
-    position: relative;
+.grid4 div {
+  background-color: #2196f3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-2::after {
-    content: "";
-    width: 3px;
-    height: 100%;
-    position: absolute;
-    background-color: sandybrown;
-    top: 0;
-    right: -3px;
+.one4 {
+  grid-area: 6 / 1 / 6 / 4;
 }
 
-.btn-2::before {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    left: -13px;
-    border-width: 7px;
-    border-style: solid;
-    border-color: transparent sandybrown transparent transparent;
-    display: none;
+.two4 {
+  grid-area: 2 / 1 / 2 / 3;
 }
 
-.btn-2:hover::before {
-    display: block;
+.three4 {
+  grid-area: 2 / 3;
 }
 
-.btn-1:hover::before {
-    content: attr(data-text);
-    position: absolute;
-    background-color: #404040;
-    color: white;
-    padding: 5px 10px;
-    top: 0;
-    left: 1px;
+.four4 {
+  grid-area: 3 / 1;
+}
+
+.five4 {
+  grid-area: 3 / 2 / 6 / 4;
+}
+
+.eight4 {
+  grid-area: 1 / 1/ 1/ 4;
 }

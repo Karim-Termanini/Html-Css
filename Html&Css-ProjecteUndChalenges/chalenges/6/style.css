@@ -1,130 +1,112 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.grid {
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: auto 1fr 1fr auto;
-  grid-template-rows: 1fr auto;
-  text-align: center;
-  gap: 10px 10px;
-}
-
-.grid div {
-  background-color: #403f3f;
-  color: white;
+.shadow-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #EEE;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px auto;
+  box-shadow: -7px 0px 1px 0px rgb(207, 110, 110), 7px 0px 1px 0px rgb(110, 110, 207);
 }
 
-.grid1 {
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-  margin: auto;
-  gap: 10px 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid1 div {
-  background-color: #2196f3;
-  color: white;
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.one, .eight {
-  grid-column: span 3;
-}
-
-.one {
-  order: 8;
-}
-
-.eight {
-  order: -1;
-}
-
-.two {
-  grid-column: span 2;
-}
-
-.five {
-  grid-column: span 2;
-  grid-row: span 3;
-}
-
-.grid3 {
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-  margin: 20px auto;
-  gap: 10px 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
   align-content: space-between;
+  flex-flow: row wrap;
 }
 
-.grid3 div {
-  background-color: #e91e63;
+.parent div {
+  background-color: red;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: calc(600px / 4);
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: -3px -5px rgb(85, 79, 79);
   font-weight: bold;
 }
 
-.grid4 {
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
+.parent2 {
+  background-color: #eee;
+  width: 600px;
+  height: 300px;
   margin: auto;
-  gap: 10px 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-end;
 }
 
-.grid4 div {
-  background-color: #2196f3;
+.parent2 div {
+  background-color: rgb(49, 114, 49);
   color: white;
+  text-align: center;
+}
+
+.parent2 .one {
+  align-self: flex-end;
+  padding: 10px 5px;
+}
+
+.parent2 .two {
+  width: 50%;
+  padding: 30px;
+}
+
+.parent2 .three {
+  align-self: flex-end;
+  padding: 10px 5px;
+}
+
+.parent3 {
+  background-color: #eee;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.parent3 div {
+  color: white;
+  width: 120px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.one4 {
-  grid-area: 6 / 1 / 6 / 4;
+.parent3 .one {
+  order: 2;
+  background-color: #ff9800;
 }
 
-.two4 {
-  grid-area: 2 / 1 / 2 / 3;
+.parent3 .two {
+  order: 3;
+  background-color: #8bc34a;
+  align-self: flex-end;
 }
 
-.three4 {
-  grid-area: 2 / 3;
+.parent3 .three {
+  order: 4;
+  background-color: #795548;
 }
 
-.four4 {
-  grid-area: 3 / 1;
-}
-
-.five4 {
-  grid-area: 3 / 2 / 6 / 4;
-}
-
-.eight4 {
-  grid-area: 1 / 1/ 1/ 4;
+.parent3 .four {
+  order: 1;
+  background-color: #673ab7;
+  align-self: flex-end;
 }

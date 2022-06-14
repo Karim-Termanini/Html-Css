@@ -1,65 +1,80 @@
+:root {
+  --bgc: rgb(201, 197, 197);
+  --padding: 20px;
+  --font-bg: 30px;
+  --font-m: 20px;
+  --font-s: 15px;
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.layout {
+.page {
   width: 100%;
   height: 100vh;
-  padding: 10px;
-  overflow: hidden;
-  background-color: #EEE;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 7% 1fr 7%;
-  grid-template-areas: "header header header header header header header header header header" "section section section section section section  section side side side " " footer footer footer footer footer footer footer footer footer footer";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--font-m);
+  padding: 10px 20px;
+  background-color: seagreen;
 }
 
-header {
-  background-color: #03a9f4;
-  color: white;
-  grid-area: header;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-header::before {
-  content: "Header";
-  line-height: 3;
+.logo, .links {
+  padding: var(--padding);
+  background-color: var(--bgc);
 }
 
-section {
-  background-color: #ff5722;
-  color: white;
-  grid-area: section;
+.links {
+  width: calc(100% - 90px);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-section::before {
-  content: "section";
+.nav-links {
+  list-style: none;
 }
 
-aside {
-  background-color: #607d8b;
-  color: white;
-  grid-area: side;
+.nav-links li {
+  display: inline-block;
+  margin-left: 10px;
 }
 
-aside::before {
-  content: "aside";
+.main-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-footer {
-  background-color: #009688;
-  color: white;
-  grid-area: footer;
+.content, .sidebar {
+  background-color: var(--bgc);
+  padding: var(--padding);
+  height: calc(100vh - 160px);
+}
+.content {
+  width: calc(100% - 30%);
+}
+.sidebar {
+  width: 29%;
 }
 
-footer::before {
-  content: "footer";
-  line-height: 3;
-}
-
-header::before, section::before, aside::before, footer::before {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgc);
+  padding: var(--padding);
 }
