@@ -16,3 +16,6 @@
 >>**6-**[CV Website](https://cv-websitee.netlify.app/)
 
 >>**7-**[paragraph](https://paragraph-website.netlify.app/)
+
+>>**8-**[Blog](https://blog-websitee.netlify.app/)
+
