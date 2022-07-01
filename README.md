@@ -5,7 +5,7 @@
 
 >>**1-**[Elzero Services](https://elszero-services.netlify.app/)
 
->>**2-**[Classic Website Arabic](https://classic-website-arabic.netlify.app/)
+>>**2-**[Blog](https://blog-websitee.netlify.app/)
 
 >>**3-**[Profile Website](https://profile-websitee.netlify.app/)
 
@@ -16,8 +16,6 @@
 >>**6-**[CV Website](https://cv-websitee.netlify.app/)
 
 >>**7-**[paragraph](https://paragraph-website.netlify.app/)
-
->>**8-**[Blog](https://blog-websitee.netlify.app/)
 
 
 ## **[Chalenges](https://github.com/Karim-Termanini/Html-Css/tree/main/Html%26Css-ProjecteUndChalenges/chalenges)**
